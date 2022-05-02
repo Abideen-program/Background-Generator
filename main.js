@@ -9,7 +9,7 @@ let css = document.querySelector("h3");
 // creating a function to get the value of the input colors
 function setGradient(){
     body.style.background = "linear-gradient(to right, " + color1.value + ", " + color2.value + ")";
-    css.textContent = body.style.background + ";";
+    css.innerText = body.style.background + ";";
 }
 
 // Performing callback functions to set the background color
@@ -33,7 +33,7 @@ function setRandom(){
     let random1 = randomColor();
     let random2 = randomColor();
     body.style.background = "linear-gradient(to right, " + random1 + ", " + random2 + ")";
-    css.textContent = body.style.background + ";";
+    css.innerText = body.style.background + ";";
 }
 
 // To perform call-back function to set the random colors
